@@ -5,7 +5,7 @@
 
   td {
     padding: 1.4rem 1rem;
-    line-height: 1;
+    line-height: 0;
 
     &:not(:nth-child(1)):not(:nth-child(2)) {
       background-color: #5b6097;
@@ -76,33 +76,23 @@ td.rank_cell {
 
 td.image_cell {
   padding: 0;
-  width: 84px;
-  height: 84px;
+  min-width: 5.75rem;
+  min-height: 5.75rem;
 
   .image_cell_skel {
     width: 100%;
     height: 100%;
   }
 
-  .image_wrapper {
-    width: 84px;
-    height: 84px;
-
-    @media (max-width: 37.5em) {
-      width: 3.438rem;
-      height: 3.438rem;
-    }
-  }
-
   @media (max-width: 37.5em) {
-    width: 3.438rem;
-    height: 3.438rem;
+    min-width: 4.813rem;
+    min-height: 4.813rem;
   }
 }
 
 td.name_cell {
   width: 18.75rem;
-  line-height: 1.438rem;
+  line-height: 1;
 
   h3 {
     white-space: break-spaces;
@@ -127,21 +117,16 @@ td.name_cell {
 
       @media (min-width: 48em) {
         font-size: 1.188rem;
-        line-height: 2.313rem;
       }
 
       @media (min-width: 75em) {
         font-size: 1.438rem;
       }
     }
-
-    @media (max-width: 37.5em) {
-      line-height: 1.188rem;
-    }
   }
 
   .name_cell_content {
-    min-width: 8.313rem;
+    min-width: 6.25rem;
   }
 
   .truncated_string_mobile {

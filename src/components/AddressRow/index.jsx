@@ -61,10 +61,7 @@ export function AddressRow({ data, index }) {
       </td>
 
       <td className={styles.image_cell}>
-        <div
-          className={styles.image_wrapper}
-          dangerouslySetInnerHTML={{ __html: getAvatarSvg(address) }}
-        ></div>
+        <div dangerouslySetInnerHTML={{ __html: getAvatarSvg(address) }}></div>
       </td>
 
       <td
